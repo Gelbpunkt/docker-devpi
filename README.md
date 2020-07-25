@@ -12,7 +12,7 @@ breaking builds.
 
 ## Installation
 
-`docker pull muccg/devpi`
+`docker pull gelbpunkt/devpi`
 
 ## Quickstart
 
@@ -24,12 +24,8 @@ docker run -d --name devpi \
     --volume /srv/docker/devpi:/data \
     --env=DEVPI_PASSWORD=changemetoyourlongsecret \
     --restart always \
-    muccg/devpi
+    gelbpunkt/devpi
 ```
-
-*Alternatively, you can use the sample [docker-compose.yml](docker-compose.yml)
-file to start the container using [Docker
-Compose](https://docs.docker.com/compose/)*
 
 Please set ``DEVPI_PASSWORD`` to a secret otherwise an attacker can *execute
 arbitrary code*.
